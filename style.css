@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Segoe UI", Roboto, sans-serif;
     margin: 0;
@@ -80,8 +87,8 @@ footer {
 img {
     display: block;
     margin: 0 auto;
-    width: 400px;
-    aspect-ratio: 1 / 1;
+    width: min(400px, 80vw);
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     border: 6px solid black;
